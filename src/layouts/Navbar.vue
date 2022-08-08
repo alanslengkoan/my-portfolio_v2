@@ -8,7 +8,7 @@
                         <!-- begin:: logo -->
                         <a href="/" class="flex items-center py-4">
                             <span class="text-xl font-bold uppercase tracking-wide">
-                                Portofolio
+                                Portfolio
                             </span>
                         </a>
                         <!-- end:: logo -->

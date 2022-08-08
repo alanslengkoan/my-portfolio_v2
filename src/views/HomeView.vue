@@ -12,7 +12,7 @@
             <VueWriter :array="['Web Developer', 'Mobile App Developer']" :typeSpeed="50" />
           </h1>
           <p class="py-2">
-            Full-Snack Developer | Code Addict | Anime Enthusiast | Sarani Mukō e Plus Ultra!
+            Follower of Jesus | Code Addict | Tech Enthusiast | Plus Ultra!
           </p>
           <div class="py-2 flex items-center justify-center">
             <div class="grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-6">
