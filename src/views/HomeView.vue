@@ -53,7 +53,7 @@
     },
     {
       icon: 'fa-brands fa-discord',
-      href: 'https://www.linkedin.com/in/alanlengkoan',
+      href: 'https://discordapp.com/users/3628',
     },
   ]
 </script>
