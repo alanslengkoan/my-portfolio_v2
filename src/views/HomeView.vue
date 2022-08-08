@@ -16,29 +16,9 @@
           </p>
           <div class="py-2 flex items-center justify-center">
             <div class="grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-6">
-              <a href=""
+              <a v-for="row in contact" :key="row.icon" :href="row.href" target="_blank"
                 class="text-2xl flex rounded-full outline p-3 mx-2 hover:bg-background-secondary hover:outline-copy-secondary hover:text-copy-primary">
-                <font-awesome-icon icon="fa-brands fa-github" />
-              </a>
-              <a href=""
-                class="text-2xl flex rounded-full outline p-3 mx-2 hover:bg-background-secondary hover:outline-copy-secondary hover:text-copy-primary">
-                <font-awesome-icon icon="fa-brands fa-instagram" />
-              </a>
-              <a href=""
-                class="text-2xl flex rounded-full outline p-3 mx-2 hover:bg-background-secondary hover:outline-copy-secondary hover:text-copy-primary">
-                <font-awesome-icon icon="fa-brands fa-twitter" />
-              </a>
-              <a href=""
-                class="text-2xl flex rounded-full outline p-3 mx-2 hover:bg-background-secondary hover:outline-copy-secondary hover:text-copy-primary">
-                <font-awesome-icon icon="fa-brands fa-facebook" />
-              </a>
-              <a href=""
-                class="text-2xl flex rounded-full outline p-3 mx-2 hover:bg-background-secondary hover:outline-copy-secondary hover:text-copy-primary">
-                <font-awesome-icon icon="fa-brands fa-whatsapp" />
-              </a>
-              <a href=""
-                class="text-2xl flex rounded-full outline p-3 mx-2 hover:bg-background-secondary hover:outline-copy-secondary hover:text-copy-primary">
-                <font-awesome-icon icon="fa-brands fa-linkedin" />
+                <font-awesome-icon :icon="row.icon" />
               </a>
             </div>
           </div>
@@ -48,6 +28,34 @@
     </section>
   </main>
 </template>
+
+<script setup>
+  const contact = [{
+      icon: 'fa-brands fa-github',
+      href: 'https://www.github.com/alanlengkoan',
+    },
+    {
+      icon: 'fa-brands fa-instagram',
+      href: 'https://www.instagram.com/alanlengkoan',
+    },
+    {
+      icon: 'fa-brands fa-twitter',
+      href: 'https://twitter.com/LengkoanAlan',
+    },
+    {
+      icon: 'fa-brands fa-facebook',
+      href: 'https://web.facebook.com/alanlengkoan',
+    },
+    {
+      icon: 'fa-brands fa-whatsapp',
+      href: 'https://api.whatsapp.com/send?phone=6285242907595',
+    },
+    {
+      icon: 'fa-brands fa-linkedin',
+      href: 'https://www.linkedin.com/in/alanlengkoan',
+    },
+  ]
+</script>
 
 <script>
 import VueWriter from 'vue-writer'
