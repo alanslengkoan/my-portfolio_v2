@@ -30,10 +30,7 @@
 </template>
 
 <script setup>
-  const contact = [{
-      icon: 'fa-brands fa-github',
-      href: 'https://www.github.com/alanlengkoan',
-    },
+  const contact = [
     {
       icon: 'fa-brands fa-instagram',
       href: 'https://www.instagram.com/alanlengkoan',
@@ -47,8 +44,8 @@
       href: 'https://web.facebook.com/alanlengkoan',
     },
     {
-      icon: 'fa-brands fa-whatsapp',
-      href: 'https://api.whatsapp.com/send?phone=6285242907595',
+      icon: 'fa-brands fa-github',
+      href: 'https://www.github.com/alanlengkoan',
     },
     {
       icon: 'fa-brands fa-linkedin',
