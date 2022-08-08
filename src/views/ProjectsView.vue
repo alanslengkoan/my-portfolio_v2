@@ -33,7 +33,7 @@
                   <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     <div
                       class="m-3 max-w-sm rounded bg-white text-black overflow-hidden shadow-lg transform transition duration-500 hover:scale-110">
-                      <img class="w-full" src="https://alanlengkoan.com/assets/img/projects/project1.webp" alt="">
+                      <img class="w-full" src="./../assets/img/projects/project1.webp" alt="">
                       <div class="px-6 py-4">
                         <h1 class="font-bold text-base py-1">Title</h1>
                         <p class="text-sm text-justify">
@@ -52,7 +52,7 @@
                     </div>
                     <div
                       class="m-3 max-w-sm rounded bg-white text-black overflow-hidden shadow-lg transform transition duration-500 hover:scale-110">
-                      <img class="w-full" src="https://alanlengkoan.com/assets/img/projects/project2.webp" alt="">
+                      <img class="w-full" src="./../assets/img/projects/project2.webp" alt="">
                       <div class="px-6 py-4">
                         <h1 class="font-bold text-base py-1">Title</h1>
                         <p class="text-sm text-justify">
@@ -71,7 +71,7 @@
                     </div>
                     <div
                       class="m-3 max-w-sm rounded bg-white text-black overflow-hidden shadow-lg transform transition duration-500 hover:scale-110">
-                      <img class="w-full" src="https://alanlengkoan.com/assets/img/projects/project3.webp" alt="">
+                      <img class="w-full" src="./../assets/img/projects/project3.webp" alt="">
                       <div class="px-6 py-4">
                         <h1 class="font-bold text-base py-1">Title</h1>
                         <p class="text-sm text-justify">
@@ -90,7 +90,7 @@
                     </div>
                     <div
                       class="m-3 max-w-sm rounded bg-white text-black overflow-hidden shadow-lg transform transition duration-500 hover:scale-110">
-                      <img class="w-full" src="https://alanlengkoan.com/assets/img/projects/project4.webp" alt="">
+                      <img class="w-full" src="./../assets/img/projects/project4.webp" alt="">
                       <div class="px-6 py-4">
                         <h1 class="font-bold text-base py-1">Title</h1>
                         <p class="text-sm text-justify">
@@ -109,7 +109,7 @@
                     </div>
                     <div
                       class="m-3 max-w-sm rounded bg-white text-black overflow-hidden shadow-lg transform transition duration-500 hover:scale-110">
-                      <img class="w-full" src="https://alanlengkoan.com/assets/img/projects/project5.webp" alt="">
+                      <img class="w-full" src="./../assets/img/projects/project5.webp" alt="">
                       <div class="px-6 py-4">
                         <h1 class="font-bold text-base py-1">Title</h1>
                         <p class="text-sm text-justify">
@@ -128,7 +128,7 @@
                     </div>
                     <div
                       class="m-3 max-w-sm rounded bg-white text-black overflow-hidden shadow-lg transform transition duration-500 hover:scale-110">
-                      <img class="w-full" src="https://alanlengkoan.com/assets/img/projects/project6.webp" alt="">
+                      <img class="w-full" src="./../assets/img/projects/project6.webp" alt="">
                       <div class="px-6 py-4">
                         <h1 class="font-bold text-base py-1">Title</h1>
                         <p class="text-sm text-justify">
@@ -153,7 +153,7 @@
                   <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     <div
                       class="m-3 max-w-sm rounded bg-white text-black overflow-hidden shadow-lg transform transition duration-500 hover:scale-110">
-                      <img class="w-full" src="https://alanlengkoan.com/assets/img/projects/project1.webp" alt="">
+                      <img class="w-full" src="./../assets/img/projects/project1.webp" alt="">
                       <div class="px-6 py-4">
                         <h1 class="font-bold text-base py-1">Title</h1>
                         <p class="text-sm text-justify">
@@ -172,7 +172,7 @@
                     </div>
                     <div
                       class="m-3 max-w-sm rounded bg-white text-black overflow-hidden shadow-lg transform transition duration-500 hover:scale-110">
-                      <img class="w-full" src="https://alanlengkoan.com/assets/img/projects/project2.webp" alt="">
+                      <img class="w-full" src="./../assets/img/projects/project2.webp" alt="">
                       <div class="px-6 py-4">
                         <h1 class="font-bold text-base py-1">Title</h1>
                         <p class="text-sm text-justify">
@@ -191,7 +191,7 @@
                     </div>
                     <div
                       class="m-3 max-w-sm rounded bg-white text-black overflow-hidden shadow-lg transform transition duration-500 hover:scale-110">
-                      <img class="w-full" src="https://alanlengkoan.com/assets/img/projects/project3.webp" alt="">
+                      <img class="w-full" src="./../assets/img/projects/project3.webp" alt="">
                       <div class="px-6 py-4">
                         <h1 class="font-bold text-base py-1">Title</h1>
                         <p class="text-sm text-justify">
@@ -216,7 +216,7 @@
                   <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     <div
                       class="m-3 max-w-sm rounded bg-white text-black overflow-hidden shadow-lg transform transition duration-500 hover:scale-110">
-                      <img class="w-full" src="https://alanlengkoan.com/assets/img/projects/project4.webp" alt="">
+                      <img class="w-full" src="./../assets/img/projects/project4.webp" alt="">
                       <div class="px-6 py-4">
                         <h1 class="font-bold text-base py-1">Title</h1>
                         <p class="text-sm text-justify">
@@ -235,7 +235,7 @@
                     </div>
                     <div
                       class="m-3 max-w-sm rounded bg-white text-black overflow-hidden shadow-lg transform transition duration-500 hover:scale-110">
-                      <img class="w-full" src="https://alanlengkoan.com/assets/img/projects/project5.webp" alt="">
+                      <img class="w-full" src="./../assets/img/projects/project5.webp" alt="">
                       <div class="px-6 py-4">
                         <h1 class="font-bold text-base py-1">Title</h1>
                         <p class="text-sm text-justify">
@@ -254,7 +254,7 @@
                     </div>
                     <div
                       class="m-3 max-w-sm rounded bg-white text-black overflow-hidden shadow-lg transform transition duration-500 hover:scale-110">
-                      <img class="w-full" src="https://alanlengkoan.com/assets/img/projects/project6.webp" alt="">
+                      <img class="w-full" src="./../assets/img/projects/project6.webp" alt="">
                       <div class="px-6 py-4">
                         <h1 class="font-bold text-base py-1">Title</h1>
                         <p class="text-sm text-justify">
