@@ -19,7 +19,8 @@
                   tasks consistently. Thank you !
                 </p>
                 <div class="flex justify-center sm:block">
-                  <a target="_blank" href="./doc/CV-Alan-Saputra-Lengkoan-(2022).pdf" class="flex justify-center items-center bg-background-tertiary hover:bg-gray-700 text-white font-bold py-2 px-2 w-36 sm:w-48 mt-10 mb-6 sm:mb-0 rounded shadow-lg duration-500">
+                  <a target="_blank" href="./doc/CV-Alan-Saputra-Lengkoan-(2022).pdf"
+                    class="flex justify-center items-center bg-background-tertiary hover:bg-gray-700 text-white font-bold py-2 px-2 w-36 sm:w-48 mt-10 mb-6 sm:mb-0 rounded shadow-lg duration-500">
                     <font-awesome-icon icon="fa-solid fa-file-arrow-down" />
                     <span class="text-sm sm:text-lg px-2">Download CV</span>
                   </a>
@@ -44,7 +45,7 @@
             <div class="bg-background-secondary col-start-1 col-end-5 my-4 rounded-xl p-4 shadow-md">
               <h3 class="mb-1 text-lg font-semibold">Elementary School (2003 - 2009)</h3>
               <p class="text-justify leading-tight">
-                SMP Negeri 2 Anggrek
+                SD Inpres 18 Kariango
               </p>
             </div>
             <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
