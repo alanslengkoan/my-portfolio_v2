@@ -41,7 +41,7 @@
         <h1 class="text-center text-2xl font-bold">Education</h1>
         <div class="grid-cols-9 py-4 text-light md:grid">
           <!-- left -->
-          <div class="flex flex-row-reverse md:contents">
+          <a href="#" class="flex flex-row-reverse md:contents">
             <div class="bg-background-secondary col-start-1 col-end-5 my-4 rounded-xl p-4 shadow-md">
               <h3 class="mb-1 text-lg font-semibold">Elementary School (2003 - 2009)</h3>
               <p class="text-justify leading-tight">
@@ -54,7 +54,7 @@
               </div>
               <div class="absolute top-1/2 -mt-3 h-6 w-6 rounded-full bg-background-secondary shadow"></div>
             </div>
-          </div>
+          </a>
           <!-- right -->
           <div class="flex md:contents">
             <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
@@ -63,21 +63,22 @@
               </div>
               <div class="absolute top-1/2 -mt-3 h-6 w-6 rounded-full bg-background-secondary shadow"></div>
             </div>
-            <div class="bg-background-secondary col-start-6 col-end-10 my-4 rounded-xl p-4 shadow-md">
+            <a href="#" class="bg-background-secondary col-start-6 col-end-10 my-4 rounded-xl p-4 shadow-md">
               <h3 class="mb-1 text-lg font-semibold">Junior High School (2009 - 2012)</h3>
               <p class="text-justify leading-tight">
                 SMP Negeri 2 Anggrek
               </p>
-            </div>
+            </a>
           </div>
           <!-- left -->
           <div class="flex flex-row-reverse md:contents">
-            <div class="bg-background-secondary col-start-1 col-end-5 my-4 rounded-xl p-4 shadow-md">
+            <a href="https://smanligorut.sch.id/" target="_blank"
+              class="bg-background-secondary col-start-1 col-end-5 my-4 rounded-xl p-4 shadow-md">
               <h3 class="mb-1 text-lg font-semibold">Senior High School (2012 - 2015)</h3>
               <p class="text-justify leading-tight">
                 SMA Negeri 5 Gorontalo Utara
               </p>
-            </div>
+            </a>
             <div class="relative col-start-5 col-end-6 mr-10 md:mx-auto">
               <div class="flex h-full w-6 items-center justify-center">
                 <div class="pointer-events-none h-full w-1 bg-background-secondary"></div>
@@ -93,12 +94,13 @@
               </div>
               <div class="absolute top-1/2 -mt-3 h-6 w-6 rounded-full bg-background-secondary shadow"></div>
             </div>
-            <div class="bg-background-secondary col-start-6 col-end-10 my-4 rounded-xl p-4 shadow-md">
+            <a href="https://handayani.ac.id/" target="_blank"
+              class="bg-background-secondary col-start-6 col-end-10 my-4 rounded-xl p-4 shadow-md">
               <h3 class="mb-1 text-lg font-semibold">College Student (2015 - 2019)</h3>
               <p class="text-justify leading-tight">
                 Universitas Handayani Makassar
               </p>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -111,7 +113,9 @@
         <div class="flex items-center justify-center py-4">
           <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
             <div class="max-w-sm overflow-hidden rounded-lg text-center bg-background-secondary shadow-lg">
-              <img class="mx-auto w-40 py-5" src="./../assets/img/expe1.png" alt="Experience at one" />
+              <a href="https://upanastudio.com/" target="_blank">
+                <img class="mx-auto w-40 py-5" src="./../assets/img/expe1.png" alt="Experience at one" />
+              </a>
               <div class="px-6 py-4">
                 <h1 class="py-1 text-sm font-bold">
                   PT. Upana Pelopor Aplikasi Adikarya
@@ -121,7 +125,9 @@
               </div>
             </div>
             <div class="max-w-sm overflow-hidden rounded-lg text-center bg-background-secondary shadow-lg">
-              <img class="mx-auto w-40 py-5" src="./../assets/img/expe2.png" alt="Experience at two" />
+              <a href="#">
+                <img class="mx-auto w-40 py-5" src="./../assets/img/expe2.png" alt="Experience at two" />
+              </a>
               <div class="px-6 py-4">
                 <h1 class="py-1 text-sm font-bold">Dapurtani</h1>
                 <h1 class="py-1 text-base font-bold">
@@ -131,7 +137,9 @@
               </div>
             </div>
             <div class="max-w-sm overflow-hidden rounded-lg text-center bg-background-secondary shadow-lg">
-              <img class="mx-auto w-40 py-5" src="./../assets/img/expe3.png" alt="Experience at three" />
+              <a href="#">
+                <img class="mx-auto w-40 py-5" src="./../assets/img/expe3.png" alt="Experience at three" />
+              </a>
               <div class="px-6 py-4">
                 <h1 class="py-1 text-sm font-bold">Freelancer</h1>
                 <h1 class="py-1 text-base font-bold">Web Developer</h1>
@@ -139,7 +147,9 @@
               </div>
             </div>
             <div class="max-w-sm overflow-hidden rounded-lg text-center bg-background-secondary shadow-lg">
-              <img class="mx-auto w-40 py-5" src="./../assets/img/expe4.png" alt="Experience at four" />
+              <a href="https://kumalagroup.id/" target="_blank">
+                <img class="mx-auto w-40 py-5" src="./../assets/img/expe4.png" alt="Experience at four" />
+              </a>
               <div class="px-6 py-4">
                 <h1 class="py-1 text-sm font-bold">PT. Kumala Group</h1>
                 <h1 class="py-1 text-base font-bold">Web / Mobile Developer</h1>
