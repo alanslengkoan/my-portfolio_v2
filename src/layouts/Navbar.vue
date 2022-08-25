@@ -16,8 +16,9 @@
                     <div class="hidden md:flex items-center space-x-1">
                         <!-- begin:: menu -->
                         <a v-for="item in navigation" :key="item.name" :href="item.href"
-                            class="py-1 px-2 font-semibold hover:border-b-4 border-copy-primary hover:text-copy-primary">
-                            <span>{{ item.name }}</span>
+                            class="py-1 px-2 font-semibold">
+                            <span  v-if="theme === 'theme-light'" class="hover-underline-light">{{ item.name }}</span>
+                            <span  v-if="theme === 'theme-dark'" class="hover-underline-dark">{{ item.name }}</span>
                         </a>
                         <!-- end:: menu -->
                     </div>
@@ -125,3 +126,55 @@
         }
     }
 </script>
+
+<style>
+/* begin:: hover light */
+.hover-underline-light {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-light:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -3px;
+  left: 0;
+  background-color: #456268;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-light:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* end:: hover light */
+
+/* begin:: hover dark */
+.hover-underline-dark {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-dark:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -3px;
+  left: 0;
+  background-color: #BBE1FA;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-dark:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/* end:: hover dark */
+</style>

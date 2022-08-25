@@ -70,30 +70,4 @@ export default {
   #home {
     min-height: 100vh;
   }
-
-  .is-typed span.cursor {
-    display: inline-block;
-    width: 5px;
-    height: 35px;
-    background-color: white;
-    animation: blink 1s infinite;
-  }
-
- .is-typed span.cursor.typing {
-   animation: none;
- }
-
- @keyframes blink {
-   49% {
-     background-color: white;
-   }
-
-   50% {
-     background-color: transparent;
-   }
-
-   99% {
-     background-color: transparent;
-   }
- }
 </style>
