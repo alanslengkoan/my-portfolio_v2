@@ -44,8 +44,6 @@
                     <!-- begin:: mobile menu button -->
                     <div class="md:hidden flex items-center">
                         <button @click="toggleNav" class="outline-none">
-                            <!-- <font-awesome-icon  icon="fa-solid fa-bars" />
-                            <font-awesome-icon v-if="showMenu" icon="fa-solid fa-xmark" /> -->
                             <svg v-if="!showMenu" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                 fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
