@@ -1,3 +1,7 @@
+<script setup>
+  import Loading from './../components/Loading.vue';
+</script>
+
 <template>
   <section id="projects" class="p-4 bg-regal-dark text-light">
     <div class="container mx-auto">
@@ -28,6 +32,11 @@
           <div class="relative flex place-items-center flex-col min-w-0 break-words w-full">
             <div class="flex-auto">
               <div class="tab-content tab-space">
+                <!-- begin:: loading -->
+                <div :class="loading ? 'hidden' : 'flex items-center justify-center h-screen'">
+                  <Loading />
+                </div>
+                <!-- end:: loading -->
                 <!-- begin:: all -->
                 <div v-bind:class="{ 'hidden': openTab !== 1, 'block': openTab === 1 }">
                   <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -96,6 +105,11 @@
           </svg>
         </div>
         <div class="p-4">
+          <!-- begin:: loading -->
+          <div :class="loading_detail ? 'hidden' : 'flex items-center justify-center h-screen'">
+            <Loading />
+          </div>
+          <!-- end:: loading -->
           <div class="container mx-auto">
             <h3 class="text-center font-bold text-sm lg:text-2xl ">{{ title }}</h3>
             <div class="mt-4 text-xs lg:text-sm">
@@ -149,9 +163,6 @@
       </div>
     </div>
   </transition>
-
-
-
 </template>
 
 <style>
@@ -183,6 +194,8 @@
   export default {
     data() {
       return {
+        loading: false,
+        loading_detail: false,
         openTab: 1,
         active: 0,
         isOpen: false,
@@ -207,6 +220,7 @@
           .get(
             import.meta.env.VITE_END_POINT + '/api/project/detail/' + id_project)
           .then(response => (
+            this.loading_detail = true,
             this.category = response.data.data.category,
             this.title = response.data.data.title,
             this.stacks = response.data.data.stacks,
@@ -216,13 +230,18 @@
             this.pictures = response.data.data.pictures
           ))
           .catch(error => console.log(error))
+
+        this.loading_detail = false
       }
     },
     mounted() {
       axios
         .get(
           import.meta.env.VITE_END_POINT + '/api/project/all')
-        .then(response => (this.all = response.data.data))
+        .then(response => (
+          this.loading = true,
+          this.all = response.data.data
+        ))
         .catch(error => console.log(error))
 
       axios
