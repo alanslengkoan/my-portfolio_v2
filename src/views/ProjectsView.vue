@@ -232,6 +232,7 @@
           .catch(error => console.log(error))
 
         this.loading_detail = false
+        this.pictures = []
       }
     },
     mounted() {
