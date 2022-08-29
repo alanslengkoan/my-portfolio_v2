@@ -11,20 +11,17 @@
         <div class="w-full">
           <ul class="flex mb-0 list-none flex-wrap pt-3 pb-10 flex-row">
             <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a class="text-xs font-bold px-5 py-3 shadow-lg rounded block leading-normal" v-on:click="toggleTabs(1)"
-                v-bind:class="{'text-black bg-white': openTab !== 1, 'text-copy-tertiary bg-background-secondary': openTab === 1}">
+              <a class="text-xs font-bold px-5 py-3 shadow-lg rounded block hover:cursor-pointer" v-on:click="toggleTabs(1)" v-bind:class="{'text-black bg-white': openTab !== 1, 'text-copy-tertiary bg-background-secondary': openTab === 1}">
                 All
               </a>
             </li>
             <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a class="text-xs font-bold px-5 py-3 shadow-lg rounded block leading-normal" v-on:click="toggleTabs(2)"
-                v-bind:class="{ 'text-black bg-white': openTab !== 2, 'text-copy-tertiary bg-background-secondary': openTab === 2 }">
+              <a class="text-xs font-bold px-5 py-3 shadow-lg rounded block hover:cursor-pointer" v-on:click="toggleTabs(2)" v-bind:class="{ 'text-black bg-white': openTab !== 2, 'text-copy-tertiary bg-background-secondary': openTab === 2 }">
                 Web
               </a>
             </li>
             <li class="-mb-px mr-2 last:mr-0 flex-auto text-center">
-              <a class="text-xs font-bold px-5 py-3 shadow-lg rounded block leading-normal" v-on:click="toggleTabs(3)"
-                v-bind:class="{ 'text-black bg-white': openTab !== 3, 'text-copy-tertiary bg-background-secondary': openTab === 3 }">
+              <a class="text-xs font-bold px-5 py-3 shadow-lg rounded block hover:cursor-pointer" v-on:click="toggleTabs(3)" v-bind:class="{ 'text-black bg-white': openTab !== 3, 'text-copy-tertiary bg-background-secondary': openTab === 3 }">
                 Mobile
               </a>
             </li>
@@ -42,7 +39,7 @@
                   <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     <div @click="isOpen = true" v-for="row of all" :key="row.id_project"
                       v-on:click="getDetail(row.id_project)"
-                      class="m-3 rounded-xl bg-white text-black overflow-hidden shadow-lg transform transition duration-500 hover:scale-110">
+                      class="m-3 rounded-xl bg-white text-black overflow-hidden shadow-lg transform transition duration-500 hover:scale-110 cursor-pointer">
                       <img class="w-full h-auto rounded-t-xl" :src="row.image" :alt="row.title">
                       <div class="px-6 py-4">
                         <p class="text-sm text-justify">{{ row.category }}</p>
@@ -57,7 +54,7 @@
                   <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     <div @click="isOpen = true" v-for="row of web" :key="row.id_project"
                       v-on:click="getDetail(row.id_project)"
-                      class="m-3 rounded-xl bg-white text-black overflow-hidden shadow-lg transform transition duration-500 hover:scale-110">
+                      class="m-3 rounded-xl bg-white text-black overflow-hidden shadow-lg transform transition duration-500 hover:scale-110 cursor-pointer">
                       <img class="w-full h-auto rounded-t-xl" :src="row.image" :alt="row.title">
                       <div class="px-6 py-4">
                         <p class="text-sm text-justify">{{ row.category }}</p>
@@ -72,7 +69,7 @@
                   <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                     <div @click="isOpen = true" v-for="row of mobile" :key="row.id_project"
                       v-on:click="getDetail(row.id_project)"
-                      class="m-3 rounded-xl bg-white text-black overflow-hidden shadow-lg transform transition duration-500 hover:scale-110">
+                      class="m-3 rounded-xl bg-white text-black overflow-hidden shadow-lg transform transition duration-500 hover:scale-110 cursor-pointer">
                       <img class="w-full h-auto rounded-t-xl" :src="row.image" :alt="row.title">
                       <div class="px-6 py-4">
                         <p class="text-sm text-justify">{{ row.category }}</p>
@@ -99,7 +96,7 @@
         <div class="flex items-center justify-between px-5 pt-5">
           <h3></h3>
           <svg @click="isOpen = false" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-            class="bi bi-x-lg" viewBox="0 0 16 16">
+            class="bi bi-x-lg hover:cursor-pointer" viewBox="0 0 16 16">
             <path
               d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
           </svg>
