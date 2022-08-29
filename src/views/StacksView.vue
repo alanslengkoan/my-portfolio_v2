@@ -1,8 +1,10 @@
 <template>
     <section class="stacks">
-        <div id="languages" class="p-4">
-            <div class="container mx-auto">
-                <h1 class="text-2xl text-center font-bold">Languages</h1>
+        <div class="container mx-auto">
+            <h1 class="text-2xl text-center font-bold">Stacks</h1>
+
+            <div id="languages" class="p-4">
+                <h1 class="text-lg text-center font-bold">Languages</h1>
                 <div class="py-4 flex place-items-center flex-col">
                     <div class="grid gap-6 grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
                         <div v-for="item in languages" :key="item.name"
@@ -12,10 +14,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="frameworks-be" class="p-4">
-            <div class="container mx-auto">
-                <h1 class="text-2xl text-center font-bold">Frameworks (Back-End)</h1>
+            <div id="frameworks-be" class="p-4">
+                <h1 class="text-lg text-center font-bold">Frameworks (Back-End)</h1>
                 <div class="py-4 flex place-items-center flex-col">
                     <div class="grid gap-6 grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
                         <div v-for="item in frameworksBe" :key="item.name"
@@ -25,10 +25,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="javascript-ui" class="p-4">
-            <div class="container mx-auto">
-                <h1 class="text-2xl text-center font-bold">Javascript (UI)</h1>
+            <div id="javascript-ui" class="p-4">
+                <h1 class="text-lg text-center font-bold">Javascript (UI)</h1>
                 <div class="py-4 flex place-items-center flex-col">
                     <div class="grid gap-6 grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
                         <div v-for="item in javascriptUi" :key="item.name"
@@ -38,10 +36,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="frameworks-fe" class="p-4">
-            <div class="container mx-auto">
-                <h1 class="text-2xl text-center font-bold">Frameworks (Front-End)</h1>
+            <div id="frameworks-fe" class="p-4">
+                <h1 class="text-lg text-center font-bold">Frameworks (Front-End)</h1>
                 <div class="py-4 flex place-items-center flex-col">
                     <div class="grid gap-6 grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
                         <div v-for="item in frameworksFe" :key="item.name"
@@ -51,10 +47,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="databases" class="p-4">
-            <div class="container mx-auto">
-                <h1 class="text-2xl text-center font-bold">Databases</h1>
+            <div id="databases" class="p-4">
+                <h1 class="text-lg text-center font-bold">Databases</h1>
                 <div class="py-4 flex place-items-center flex-col">
                     <div class="grid gap-6 grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
                         <div v-for="item in databases" :key="item.name"
@@ -64,10 +58,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="package-managers" class="p-4">
-            <div class="container mx-auto">
-                <h1 class="text-2xl text-center font-bold">Package Managers</h1>
+            <div id="package-managers" class="p-4">
+                <h1 class="text-lg text-center font-bold">Package Managers</h1>
                 <div class="py-4 flex place-items-center flex-col">
                     <div class="grid gap-6 grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
                         <div v-for="item in packageManagers" :key="item.name"
@@ -77,10 +69,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="tools-and-platforms" class="p-4">
-            <div class="container mx-auto">
-                <h1 class="text-2xl text-center font-bold">Tools & Platforms</h1>
+            <div id="tools-and-platforms" class="p-4">
+                <h1 class="text-lg text-center font-bold">Tools & Platforms</h1>
                 <div class="py-4 flex place-items-center flex-col">
                     <div class="grid gap-6 grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
                         <div v-for="item in toolsAndPlatforms" :key="item.name"
