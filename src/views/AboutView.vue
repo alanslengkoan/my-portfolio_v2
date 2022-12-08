@@ -171,7 +171,6 @@
               <calendar-heatmap :values="values" :end-date="endDate" :style="{'width': '100%'}" :round="5"
                 :range-color="rangeColor" />
             </div>
-
             <div class="">
               <div class="languages" ref="chartdiv"></div>
             </div>
