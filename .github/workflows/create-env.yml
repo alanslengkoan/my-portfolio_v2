@@ -16,3 +16,4 @@ jobs:
         envkey_SECRET_KEY: ${{ secrets.GH_TOKEN }}
         some_other_variable: foobar
         file_name: .env
+        fail_on_empty: false
