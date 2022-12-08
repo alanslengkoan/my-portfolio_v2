@@ -3,10 +3,12 @@ name: Create envfile
 on: [ push ]
 
 jobs: 
-  create_env_file_job:
+  build:
+  
     runs-on: ubuntu-latest
+    
     steps:
       - name: Create .env file
-        run: |
-          touch .env
-          echo ENGINE_API_KEY=${{ secrets.GH_TOKEN }} >> .env
+        uses: SpicyPizza/create-envfile@v1
+        with:
+          envkey_GITHUB_LOGIN: "sania-dsouza"
