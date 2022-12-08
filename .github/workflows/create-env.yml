@@ -1,9 +1,7 @@
 name: Create envfile
 
-on:
-  push:
-    branches:
-      - master
+on: [ push ]
+
 jobs: 
   create_env_file_job:
     runs-on: ubuntu-latest
