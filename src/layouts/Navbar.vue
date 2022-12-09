@@ -91,10 +91,6 @@
             name: 'Blog',
             href: 'https://tgskmps.wordpress.com/',
         },
-        {
-            name: 'Channel',
-            href: 'https://my-favorite-channel.herokuapp.com/',
-        },
     ]
 </script>
 
