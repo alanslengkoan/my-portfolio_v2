@@ -7,7 +7,10 @@
         <div class="container mx-auto">
             <h1 class="text-2xl text-center font-bold">Channels</h1>
 
-            <div v-for="(row, i) in profil" :key="i">
+            <div :class="loading ? 'hidden' : 'flex items-center justify-center h-screen'">
+                <Loading />
+            </div>
+            <div v-for="(row, i) in youtube" :key="i">
                 <div class="py-4 flex flex-wrap items-center">
                     <div class="grow-0 shrink-0 basis-auto block w-full lg:w-6/12 xl:w-4/12">
                         <div class="my-auto">
@@ -18,23 +21,10 @@
                     <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-8/12">
                         <div class="py-4 flex place-items-center flex-col">
                             <div class="gap-6 grid lg:grid-cols-2">
-                                <div class="mx-2 my-2">
-                                    <iframe src="https://www.youtube.com/embed/dG7zuJ9JS-0?rel=0"
-                                        allowfullscreen></iframe>
-                                    <h3 class="font-semibold pt-3 text-lg">Judul</h3>
-                                    <p class="font-semibold text-xs italic">22-22-2222</p>
-                                </div>
-                                <div class="mx-2 my-2">
-                                    <iframe src="https://www.youtube.com/embed/dG7zuJ9JS-0?rel=0"
-                                        allowfullscreen></iframe>
-                                </div>
-                                <div class="mx-2 my-2">
-                                    <iframe src="https://www.youtube.com/embed/dG7zuJ9JS-0?rel=0"
-                                        allowfullscreen></iframe>
-                                </div>
-                                <div class="mx-2 my-2">
-                                    <iframe src="https://www.youtube.com/embed/dG7zuJ9JS-0?rel=0"
-                                        allowfullscreen></iframe>
+                                <div v-for="(video, j) in row.videos" :key="j" class="mx-2 my-2">
+                                    <iframe :src="'https://www.youtube.com/embed/'+video.videoId+'?rel=0'" allowfullscreen></iframe>
+                                    <h3 class="font-semibold pt-3 text-lg">{{ video.title }}</h3>
+                                    <p class="font-semibold text-xs italic">{{ video.publishedAt }}</p>
                                 </div>
                             </div>
                         </div>
@@ -58,7 +48,6 @@
         data() {
             return {
                 loading: false,
-                profil: [],
                 channelId: [
                     'UCpSPS5yLCxYRuZSrCx-eBjA',
                     'UCnrZ-UFSzeMSxKx_OHtwKsQ',
@@ -67,44 +56,52 @@
                     'UCfzlCWGWYyIQ0aLC5w48gBQ',
                     'UCW5YeuERMmlnqo4oq8vwUpg',
                     'UC14ZKB9XsDZbnHVmr4AmUpQ'
-                ]
+                ],
+                youtube: [],
             }
         },
         methods: {
             getProfil: function (id) {
-                let urlProfil = `https://www.googleapis.com/youtube/v3/channels?part=snippet&id=${id}&key=AIzaSyCs-j3dW1uwPLFOp2KsDzd7CGRCX7-6dgA`;
-                let urlVideos = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&order=date&channelId=${id}&key=AIzaSyCs-j3dW1uwPLFOp2KsDzd7CGRCX7-6dgA`;
-
-                let arrProfil = [];
-                let arrVideos = [];
+                let urlProfil = `https://www.googleapis.com/youtube/v3/channels?part=snippet&id=${id}&key=${import.meta.env.VITE_YT_KEY}`;
 
                 axios.get(urlProfil)
                     .then(response => (
-                        arrProfil.push({
+                        this.loading = true,
+                        this.youtube.push({
+                            id: response.data.items[0].id,
                             name: response.data.items[0].snippet.title,
                             image: response.data.items[0].snippet.thumbnails.medium.url,
                         })
                     )).catch(error => console.log(error))
+            },
+            getVideos: function (id) {
+                let urlVideos = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=4&order=date&channelId=${id}&key=${import.meta.env.VITE_YT_KEY}`;
 
                 axios.get(urlVideos)
                     .then(response => (
-                        arrVideos.push({
-                            videos: response.data.items[0].id.videoId,
-                            title: response.data.items[0].snippet.title,
-                            publishedAt: response.data.items[0].snippet.publishedAt,
+                        this.youtube.forEach(object => {
+                            let arrVideos = [];
+
+                            response.data.items.filter((value, key) => {
+                                if (object.id === value.snippet.channelId) {
+                                    arrVideos.push({
+                                        videoId: value.id.videoId,
+                                        title: value.snippet.title,
+                                        publishedAt: value.snippet.publishedAt,
+                                    });
+                                }
+                            })
+
+                            object['videos'] = arrVideos;
                         })
                     )).catch(error => console.log(error))
-
-
-
-                console.log(arrProfil);
-                console.log(arrVideos);
-            },
+            }
         },
         mounted() {
             this.channelId.map((value, key) => {
                 this.getProfil(value)
-            })
+                this.getVideos(value)
+            });
         }
     }
 </script>
