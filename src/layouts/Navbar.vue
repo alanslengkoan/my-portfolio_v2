@@ -88,6 +88,10 @@
             href: '/stacks',
         },
         {
+            name: 'Channels',
+            href: '/channels',
+        },
+        {
             name: 'Blog',
             href: 'https://tgskmps.wordpress.com/',
         },

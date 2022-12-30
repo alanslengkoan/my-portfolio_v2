@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
+import ChannelsView from '../views/ChannelsView.vue'
 import ProjectsView from '../views/ProjectsView.vue'
 import StacksView from '../views/StacksView.vue'
 
@@ -26,6 +27,11 @@ const router = createRouter({
       path: '/stacks',
       name: 'stacks',
       component: StacksView
+    },
+    {
+      path: '/channels',
+      name: 'channels',
+      component: ChannelsView
     }
   ]
 })
