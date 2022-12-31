@@ -88,7 +88,7 @@
                                     id: id,
                                     videoId: value.id.videoId,
                                     title: value.snippet.title,
-                                    publishedAt: value.snippet.publishedAt,
+                                    publishedAt: this.parseDate(value.snippet.publishedAt),
                                 })
                             }
                         })
