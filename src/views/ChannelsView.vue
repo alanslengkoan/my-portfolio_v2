@@ -22,7 +22,7 @@
                         <div class="py-4 flex place-items-center flex-col">
                             <div class="gap-6 grid lg:grid-cols-2">
                                 <div v-for="(video, j) in row.videos" :key="j" class="mx-2 my-2">
-                                    <iframe class="mx-auto" :src="'https://www.youtube.com/embed/'+video.videoId+'?rel=0'" allowfullscreen></iframe>
+                                    <iframe class="w-full" :src="'https://www.youtube.com/embed/'+video.videoId+'?rel=0'" allowfullscreen></iframe>
                                     <h3 class="font-semibold pt-3 text-lg">{{ video.title }}</h3>
                                     <p class="font-semibold text-xs italic">{{ video.publishedAt }}</p>
                                 </div>
