@@ -22,7 +22,7 @@
                         <div class="py-4 flex place-items-center flex-col">
                             <div class="gap-6 grid lg:grid-cols-2">
                                 <div v-for="(video, j) in row.videos" :key="j" class="mx-2 my-2">
-                                    <iframe :src="'https://www.youtube.com/embed/'+video.videoId+'?rel=0'" allowfullscreen></iframe>
+                                    <iframe class="mx-auto" :src="'https://www.youtube.com/embed/'+video.videoId+'?rel=0'" allowfullscreen></iframe>
                                     <h3 class="font-semibold pt-3 text-lg">{{ video.title }}</h3>
                                     <p class="font-semibold text-xs italic">{{ video.publishedAt }}</p>
                                 </div>
@@ -48,6 +48,8 @@
         data() {
             return {
                 loading: false,
+                profil: [],
+                videos: [],
                 channelId: [
                     'UCpSPS5yLCxYRuZSrCx-eBjA',
                     'UCnrZ-UFSzeMSxKx_OHtwKsQ',
@@ -67,7 +69,7 @@
                 axios.get(urlProfil)
                     .then(response => (
                         this.loading = true,
-                        this.youtube.push({
+                        this.profil.push({
                             id: response.data.items[0].id,
                             name: response.data.items[0].snippet.title,
                             image: response.data.items[0].snippet.thumbnails.medium.url,
@@ -79,29 +81,38 @@
 
                 axios.get(urlVideos)
                     .then(response => (
-                        this.youtube.forEach(object => {
-                            let arrVideos = [];
-
-                            response.data.items.filter((value, key) => {
-                                if (object.id === value.snippet.channelId) {
-                                    arrVideos.push({
-                                        videoId: value.id.videoId,
-                                        title: value.snippet.title,
-                                        publishedAt: value.snippet.publishedAt,
-                                    });
-                                }
-                            })
-
-                            object['videos'] = arrVideos;
+                        response.data.items.filter((value, key) => {
+                            if (value.snippet.channelId === id) {
+                                this.videos.push({
+                                    id: id,
+                                    videoId: value.id.videoId,
+                                    title: value.snippet.title,
+                                    publishedAt: value.snippet.publishedAt,
+                                })
+                            }
                         })
                     )).catch(error => console.log(error))
-            }
+            },
         },
         mounted() {
             this.channelId.map((value, key) => {
                 this.getProfil(value)
                 this.getVideos(value)
             });
+        },
+        computed: {
+            youtube: function () {
+                return this.profil.map((value, key) => {
+                    return {
+                        id: value.id,
+                        name: value.name,
+                        image: value.image,
+                        videos: this.videos.filter((rows, key) => {
+                            return rows.id === value.id
+                        })
+                    }
+                })
+            }
         }
     }
 </script>
