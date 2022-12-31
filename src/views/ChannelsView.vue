@@ -94,9 +94,9 @@
                         })
                     )).catch(error => console.log(error))
             },
-            parseDate: function (value) {
-                let date = new Date(value);
-                return date.getDate() + " - " + (date.getMonth() + 1) + " - " + date.getFullYear();
+            parseDate: function (date) {
+                let d = new Date(date);
+                return d.getDate() + "-" + (d.getMonth() + 1) + "-" + d.getFullYear();
             }
         },
         mounted() {
