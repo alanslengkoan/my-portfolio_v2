@@ -59,7 +59,6 @@
                     'UCW5YeuERMmlnqo4oq8vwUpg',
                     'UC14ZKB9XsDZbnHVmr4AmUpQ'
                 ],
-                youtube: [],
             }
         },
         methods: {
