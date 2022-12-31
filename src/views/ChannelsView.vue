@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="grow-0 shrink-0 basis-auto w-full lg:w-6/12 xl:w-8/12">
-                        <div class="py-4 flex place-items-center flex-col">
+                        <div class="p-4 py-4 flex place-items-center flex-col">
                             <div class="gap-6 grid lg:grid-cols-2">
                                 <div v-for="(video, j) in row.videos" :key="j" class="mx-2 my-2">
                                     <iframe class="w-full" :src="'https://www.youtube.com/embed/'+video.videoId+'?rel=0'" allowfullscreen></iframe>
