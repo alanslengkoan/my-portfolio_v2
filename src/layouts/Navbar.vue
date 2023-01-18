@@ -26,7 +26,7 @@
 
                     <!-- begin:: secondary navbar items -->
                     <div class="md:flex flex items-center space-x-3 px-10">
-                        <button @click="showDark" aria-label="switch">
+                        <button @click="showDark" aria-label="Button Switch">
                             <svg v-if="theme === 'theme-light'" xmlns="http://www.w3.org/2000/svg" width="20"
                                 height="20" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
                                 <path
@@ -43,7 +43,7 @@
 
                     <!-- begin:: mobile menu button -->
                     <div class="md:hidden flex items-center">
-                        <button @click="toggleNav" class="outline-none">
+                        <button @click="toggleNav" aria-label="Button Menu" class="outline-none">
                             <svg v-if="!showMenu" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                 fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
