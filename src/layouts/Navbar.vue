@@ -26,7 +26,7 @@
 
                     <!-- begin:: secondary navbar items -->
                     <div class="md:flex flex items-center space-x-3 px-10">
-                        <button @click="showDark">
+                        <button @click="showDark" aria-label="switch">
                             <svg v-if="theme === 'theme-light'" xmlns="http://www.w3.org/2000/svg" width="20"
                                 height="20" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
                                 <path
