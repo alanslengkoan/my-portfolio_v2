@@ -192,10 +192,6 @@
             href: 'https://www.docker.com/',
         },
         {
-            icon: 'devicon-heroku-plain',
-            href: 'https://www.heroku.com/',
-        },
-        {
             icon: 'devicon-firebase-plain',
             href: 'https://firebase.google.com/',
         },
