@@ -19,10 +19,10 @@
                   tasks consistently. Thank you !
                 </p>
                 <div class="flex justify-center sm:block">
-                  <button type="button" @click="readFile" class="flex justify-center items-center bg-background-tertiary hover:bg-gray-700 text-white font-bold py-2 px-2 w-36 sm:w-48 mt-10 mb-6 sm:mb-0 rounded shadow-lg duration-500">
+                  <router-link to="/pdf" target="_blank" class="flex justify-center items-center bg-background-tertiary hover:bg-gray-700 text-white font-bold py-2 px-2 w-36 sm:w-48 mt-10 mb-6 sm:mb-0 rounded shadow-lg duration-500">
                     <font-awesome-icon icon="fa-solid fa-file-arrow-down" />
                     <span class="text-sm sm:text-lg px-2">Download CV</span>
-                  </button>
+                  </router-link>
                 </div>
               </div>
             </div>
@@ -216,11 +216,6 @@
         orientation: 'horizontal',
         rangeColor: ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'],
       };
-    },
-    methods: {
-      readFile() {
-        window.open('./static/doc/cv.pdf', '_blank') // to open in new tab
-      }
     },
     async mounted() {
       // begin:: github calender
