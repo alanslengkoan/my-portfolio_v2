@@ -19,8 +19,7 @@
                   tasks consistently. Thank you !
                 </p>
                 <div class="flex justify-center sm:block">
-                  <a target="_blank" href="./doc/CV.pdf"
-                    class="flex justify-center items-center bg-background-tertiary hover:bg-gray-700 text-white font-bold py-2 px-2 w-36 sm:w-48 mt-10 mb-6 sm:mb-0 rounded shadow-lg duration-500">
+                  <a target="_blank" href="./doc/CV.pdf" class="flex justify-center items-center bg-background-tertiary hover:bg-gray-700 text-white font-bold py-2 px-2 w-36 sm:w-48 mt-10 mb-6 sm:mb-0 rounded shadow-lg duration-500">
                     <font-awesome-icon icon="fa-solid fa-file-arrow-down" />
                     <span class="text-sm sm:text-lg px-2">Download CV</span>
                   </a>
