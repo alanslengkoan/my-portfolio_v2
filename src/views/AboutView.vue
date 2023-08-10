@@ -219,7 +219,7 @@
     },
     methods: {
       readFile() {
-        window.open('/doc/cv.pdf', '_blank') // to open in new tab
+        window.open('./static/doc/cv.pdf', '_blank') // to open in new tab
       }
     },
     async mounted() {
