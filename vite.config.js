@@ -15,7 +15,7 @@ export default defineConfig({
       injectRegister: 'auto',
       workbox: {
         cleanupOutdatedCaches: false,
-        globPatterns: ['**/*.{js,css,html,ico,png,jpg,svg,json,vue,txt,woff2,pdf}']
+        globPatterns: ['**/*.{js,css,html,ico,png,jpg,svg,json,vue,txt,woff2}']
       },
       includeAssets: ['safari-pinned-tab.svg'],
       manifest: {
