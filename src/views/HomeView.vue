@@ -4,7 +4,7 @@
       <div class="container mx-auto px-3">
         <div class="py-4 text-center">
           <!-- begin:: introduce myself -->
-          <img class="py-2 px-2 mx-auto rounded-full" src="./../assets/img/profil.jpg" alt="Profile">
+          <img class="py-2 px-2 mx-auto rounded-full" src="./../assets/img/profil.jpg" alt="Profile" width="200" height="auto">
           <h1 class="font-bold text-3xl">
             Yo, I'm Alan Saputra Lengkoan a
           </h1>
