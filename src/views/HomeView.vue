@@ -15,7 +15,7 @@
             Follower of Jesus | Code Addict | Tech Enthusiast | Plus Ultra!
           </p>
           <div class="py-2 flex items-center justify-center">
-            <div class="grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-6">
+            <div class="grid gap-4 grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4">
               <a v-for="row in contact" :key="row.icon" :href="row.href" target="_blank" :aria-label="row.name"
                 class="text-2xl rounded-full outline p-2 mx-2 hover:bg-background-secondary hover:outline-copy-secondary hover:text-copy-primary">
                 <font-awesome-icon :icon="row.icon" />
