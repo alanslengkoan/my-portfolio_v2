@@ -47,16 +47,6 @@
       href: 'https://web.facebook.com/alanlengkoan',
     },
     {
-      name: 'github',
-      icon: 'fa-brands fa-github',
-      href: 'https://www.github.com/alanlengkoan',
-    },
-    {
-      name: 'linkedin',
-      icon: 'fa-brands fa-linkedin',
-      href: 'https://www.linkedin.com/in/alanlengkoan',
-    },
-    {
       name: 'discord',
       icon: 'fa-brands fa-discord',
       href: 'https://discordapp.com/users/3628',
