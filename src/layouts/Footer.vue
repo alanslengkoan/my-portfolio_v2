@@ -7,7 +7,7 @@ const currentYear = new Date().getFullYear();
         <div class="container mx-auto p-4 text-center">
             <span class="text-sm font-bold">
                 <em>&copy; 2017 - {{ currentYear }}. Developed with <span style="color: #e25555;">&#9829;</span> by <a
-                        href="https://alanlengkoan.com">alanlengkoan</a></em>
+                        href="https://alanslengkoan.netlify.app">alanslengkoan</a></em>
             </span>
         </div>
     </footer>
