@@ -34,17 +34,17 @@
     {
       name: 'instagram',
       icon: 'fa-brands fa-instagram',
-      href: 'https://www.instagram.com/alanlengkoan',
+      href: 'https://www.instagram.com/alanslengkoan',
     },
     {
       name: 'twitter',
       icon: 'fa-brands fa-twitter',
-      href: 'https://twitter.com/LengkoanAlan',
+      href: 'https://twitter.com/alanslengkoan',
     },
     {
       name: 'facebook',
       icon: 'fa-brands fa-facebook',
-      href: 'https://web.facebook.com/alanlengkoan',
+      href: 'https://web.facebook.com/alanslengkoan',
     },
     {
       name: 'discord',

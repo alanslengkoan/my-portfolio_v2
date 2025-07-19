@@ -208,7 +208,7 @@
     },
     data() {
       return {
-        username: 'alanlengkoan',
+        username: 'alanslengkoan',
         months: 12,
         ghToken: import.meta.env.VITE_GH_TOKEN,
         values: [],
@@ -262,7 +262,7 @@
       // end:: github calender
 
       // begin:: wakatime
-      let urlWakatime = 'https://wakatime.com/share/@alanlengkoan/20e9ebcc-0a44-4ef4-afc4-5fae1df3f56d.json';
+      let urlWakatime = 'https://wakatime.com/share/@alanslengkoan/20e9ebcc-0a44-4ef4-afc4-5fae1df3f56d.json';
       await jsonp(urlWakatime, {
           param: 'callback'
         }).then(data => {
